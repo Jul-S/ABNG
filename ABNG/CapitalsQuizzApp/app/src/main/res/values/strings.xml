@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Capitals Quizz App</string>
+    <string name="q1_text">1. Vienna is the capital of?</string>
+    <string name="q1a_switzerland">A. Switzerland</string>
+    <string name="q1b_hungary">B. Hungary</string>
+    <string name="q1c_austria">C. Austria</string>
+    <string name="q2_text">2. Luxembourg is a?</string>
+    <string name="q2a_capital">A. Capital</string>
+    <string name="q2b_country">B. Country</string>
+    <string name="q2c_wine">C. Wine</string>
+    <string name="q3text">3. What is the capital of Sinegal?</string>
+    <string name="hint">Put your answer here</string>
+    <string name="q4text">4. Lisbon is a capital of?</string>
+    <string name="q4a_spain">A. Spain</string>
+    <string name="q4b_portugal">B. Portugal</string>
+    <string name="q4c_dominica">C. Dominica</string>
+    <string name="q5text">5. Which country(ies) has officialy more than 1 capital?</string>
+    <string name="q5a_united_states_of_america">A. United States of America</string>
+    <string name="q5b_south_africa">B. South Africa</string>
+    <string name="q5c_bolivia">C. Bolivia</string>
+    <string name="q6text">6. Sofia is the capital of?</string>
+    <string name="Button">RESULT</string>
+</resources>
