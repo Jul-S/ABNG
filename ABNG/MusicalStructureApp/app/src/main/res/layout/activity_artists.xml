@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.udacity.abng.musicalstructureapp.Albums">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <Button
+            android:id="@+id/artists_tolibrary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="Return To Library" />
+
+        <TextView
+            android:id="@+id/artists_song"
+            style="@style/activity_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/artists_tolibrary"
+            android:gravity="center"
+            android:text="Artists - Song - Album Name" />
+
+        <TextView
+            android:id="@+id/artists_description"
+            style="@style/activity_text"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/artists_song"
+            android:gravity="center"
+            android:text="@string/Artists_description" />
+
+        <Button
+            android:id="@+id/artists_nowplaying"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="Now Playing" />
+
+    </RelativeLayout>
+
+</ScrollView>

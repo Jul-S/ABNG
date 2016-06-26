@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Music</string>
+    <string name="Artists">Artists</string>
+    <string name="Artists_description">This Activity contains list of songs sorted by Artists names alphabeticaly. Pressing on the songs we go to Now Playing Activity and start Playing</string>
+    <string name="Albums">Albums</string>
+    <string name="Albums_description">This Activity contains list of songs sorted by Albums names alphabeticaly. Pressing on the songs we go to Now Playing Activity and start Playing</string>
+    <string name="Songs">Songs</string>
+    <string name="Songs_description">This Activity contains list of songs sorted by Songs names alphabeticaly. Pressing on the songs we go to Now Playing Activity and start Playing</string>
+    <string name="NowPlaying_description">This Activity shows current Song Playing</string>
+    <string name="NowPlaying">NowPlaying</string>
+</resources>
