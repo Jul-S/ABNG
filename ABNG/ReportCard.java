@@ -1,3 +1,4 @@
+package com.example.android.miwok;
 
 public class ReportCard {
     private int graduateYear;
@@ -8,6 +9,19 @@ public class ReportCard {
         graduateYear = this.graduateYear;
         studentLastName = this.studentLastName;
         studentFirstName = this.studentFirstName;
+    }
+
+    @Override
+    public String toString() {
+        return "ReportCard{" +
+                "graduateYear=" + graduateYear +
+                ", studentFirstName='" + studentFirstName + '\'' +
+                ", studentLastName='" + studentLastName + '\'' +
+                ", studentGrade=" + studentGrade +
+                ", classTaken='" + classTaken + '\'' +
+                ", teacherLastname='" + teacherLastname + '\'' +
+                ", attandanceDays=" + attandanceDays +
+                '}';
     }
 
     private int studentGrade;
