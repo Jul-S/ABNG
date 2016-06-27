@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">London Tour Guide</string>
+
+    <!-- Category name for Sights -->
+    <string name="category_sights">Sights</string>
+
+    <!-- Category name for Eatout -->
+    <string name="category_eatout">Eat out</string>
+
+    <!-- Category name for Shops -->
+    <string name="category_shops">Shop</string>
+
+    <!-- Category name for Sights -->
+    <string name="category_events">Events</string>
+
+    <!-- SIGHTS CATEGORY NAMES AND DESCRIPTION -->
+    <string name="sites_name1">London Eye</string>
+    <string name="sites_description1">Iconic riverside observation wheel</string>
+    <string name="sites_name2">Tower Bridge</string>
+    <string name="sites_description2">Iconic victorian turreted bridge</string>
+    <string name="sites_name3">Westminster Abbey</string>
+    <string name="sites_description3">Gothic church and site for coronation</string>
+    <string name="sites_name4">British Museum</string>
+    <string name="sites_description4">A historian`s treasure trove</string>
+    <string name="sites_name5">Big Ben</string>
+    <string name="sites_description5">Iconic national timepiece</string>
+    <string name="sites_name6">Buckingham Palace</string>
+    <string name="sites_description6">Home the British Queen and State Rooms</string>
+    <string name="sites_name7">St Paul`s Cathedral</string>
+    <string name="sites_description7">Iconic cathedral`s churchyard and garden</string>
+    <string name="sites_name8">Palace of Westminster</string>
+    <string name="sites_description8">Iconic home of UK parliament</string>
+
+    <!-- EATOUT CATEGORY NAMES AND DESCRIPTION -->
+    <string name="eat_name1">Gastronhome</string>
+    <string name="eat_description1">Cuisines: French European</string>
+    <string name="eat_name2">The Five Fields</string>
+    <string name="eat_description2">Cuisines: European British Contemporary</string>
+    <string name="eat_name3">The Ledbury</string>
+    <string name="eat_description3">Cuisines: French European Gluten Free</string>
+    <string name="eat_name4">The Clink Restaurant</string>
+    <string name="eat_description4">Cuisines: British Contemporary Gluten Free</string>
+    <string name="eat_name5">The Golden Chippy</string>
+    <string name="eat_description5">Cuisines: Seafood Fast Food British</string>
+    <string name="eat_name6">Typing Room</string>
+    <string name="eat_description6">Cuisines: European British</string>
+    <string name="eat_name7">TortelliniCup</string>
+    <string name="eat_description7">Cuisines: Italian Fast Food Mediterranean Vegetarian Gluten Free Gastropub</string>
+    <string name="eat_name8">Cafe Loren</string>
+    <string name="eat_description8">Cuisines: Mediterranean British Cafe Vegetarian Middle Eastern</string>
+
+    <!-- SHOP CATEGORY NAMES AND DESCRIPTION -->
+    <string name="shop_name1">Westfield London</string>
+    <string name="shop_description1">Ariel Way    +44 20 3371 2300</string>
+    <string name="shop_name2">London Designer Outlet</string>
+    <string name="shop_description2">Wembley Park Blvd   +44 20 8912 5210</string>
+    <string name="shop_name3">Museum of London Shop</string>
+    <string name="shop_description3">150 London Wall    +44 20 7814 5600</string>
+    <string name="shop_name4">The Whisky Exchange (Shop)</string>
+    <string name="shop_description4">2 Bedford St    +44 20 7100 0088</string>
+    <string name="shop_name5">Michael Kors</string>
+    <string name="shop_description5">179 Regent St    +44 20 7659 3550</string>
+    <string name="shop_name6">Monocle shop</string>
+    <string name="shop_description6">2A George St</string>
+    <string name="shop_name7">Clarks Shoes - Factory Shop</string>
+    <string name="shop_description7">67-83 Seven Sisters Rd    +44 20 7281 9364</string>
+    <string name="shop_name8">Hobgoblin Music London</string>
+    <string name="shop_description8">24 Rathbone Pl   +44 20 7323 9040</string>
+
+    <!-- Events CATEGORY NAMES AND DESCRIPTION -->
+    <string name="events_name1">Udderbelly Festival</string>
+    <string name="events_description1">Southbank Centre</string>
+    <string name="events_name2">BP Big Screens 2016</string>
+    <string name="events_description2">Trafalgar Squar</string>
+    <string name="events_name3">London Wonderground</string>
+    <string name="events_description3">Southbank Centre</string>
+    <string name="events_name4">Big Dance 2016</string>
+    <string name="events_description4">Until 10 September 2016</string>
+    <string name="events_name5">The Battle of the Somme Centenary Events</string>
+    <string name="events_description5">Until 31 July 2016</string>
+    <string name="events_name6">Height of Summer</string>
+    <string name="events_description6">The View from The Shard</string>
+
+</resources>
