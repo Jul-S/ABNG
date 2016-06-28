@@ -7,3 +7,4 @@ Project 3. Capitals Quizz App
 Project 4. Music Structure App
 Project 5. Reportcard.java
 Project 6. Tour Guid App
+Project 7. Book Search App
