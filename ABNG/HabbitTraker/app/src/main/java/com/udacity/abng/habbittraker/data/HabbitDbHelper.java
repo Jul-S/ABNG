@@ -1,8 +1,10 @@
 package com.udacity.abng.habbittraker.data;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
 import com.udacity.abng.habbittraker.data.HabbitContract.CategoryEntry;
 import com.udacity.abng.habbittraker.data.HabbitContract.HabbitEntry;
 
@@ -11,13 +13,10 @@ import com.udacity.abng.habbittraker.data.HabbitContract.HabbitEntry;
  */
 public class HabbitDbHelper extends SQLiteOpenHelper {
 
-    // If you change the database schema, you must increment the database version.
-    private static final int DATABASE_VERSION = 2;
-
     static final String DATABASE_NAME = "habbit.db";
 
     public HabbitDbHelper(Context context) {
-        super(context, DATABASE_NAME, null, DATABASE_VERSION);
+        super(context, DATABASE_NAME, null, 1);
     }
 
     @Override
@@ -26,7 +25,7 @@ public class HabbitDbHelper extends SQLiteOpenHelper {
         final String SQL_CREATE_CATEGORY_TABLE = "CREATE TABLE " + CategoryEntry.TABLE_NAME + " (" +
                 HabbitContract.CategoryEntry._ID + " INTEGER PRIMARY KEY," +
                 CategoryEntry.COLUMN_CATEGORY + " TEXT UNIQUE NOT NULL, " +
-                CategoryEntry.COLUMN_HABBIT_DESC + " TEXT NOT NULL, " +
+                CategoryEntry.COLUMN_HABBIT_DESC + " TEXT NOT NULL" +
                 " );";
         // Create a table to hold habbits.
         final String SQL_CREATE_HABBIT_TABLE = "CREATE TABLE " + HabbitEntry.TABLE_NAME + " (" +
@@ -52,9 +51,39 @@ public class HabbitDbHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int oldVersion, int newVersion) {
-        // addthis  upgrade policy to simply to discard the data and start over
-//        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + CategoryEntry.TABLE_NAME);
-//        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + HabbitEntry.TABLE_NAME);
-//        onCreate(sqLiteDatabase);
+        //  addthis  upgrade policy to simply to discard the data and start over
+        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + CategoryEntry.TABLE_NAME);
+        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + HabbitEntry.TABLE_NAME);
+        onCreate(sqLiteDatabase);
+    }
+
+    public int updateHabbit(long rowId, String done) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(HabbitEntry.COLUMN_DONE, done);
+
+        // Which row to update, based on the ID
+        String selection = HabbitEntry._ID + " LIKE ?";
+        String[] selectionArgs = {String.valueOf(rowId)};
+
+        // updating row
+        return db.update(HabbitEntry.TABLE_NAME,
+                values,
+                selection,
+                selectionArgs);
+    }
+
+    public void deleteHabbit(String habbit) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete(HabbitEntry.TABLE_NAME,
+                HabbitEntry.COLUMN_SHORT_DESC + " = ?",
+                new String[]{habbit});
+        db.close();
+    }
+
+    public void deleteAllHabbits(SQLiteDatabase db, String table) {
+        db.execSQL("DELETE FROM " + HabbitEntry.TABLE_NAME);
+        db.close();
     }
 }

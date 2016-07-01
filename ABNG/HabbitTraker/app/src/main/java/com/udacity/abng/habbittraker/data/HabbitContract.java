@@ -60,42 +60,6 @@ public class HabbitContract {
         public static Uri buildHabbitUri(long id) {
             return ContentUris.withAppendedId(CONTENT_URI, id);
         }
-
-
-        /*
-        This is the functions for HabbitProvider
-     */
-        public static Uri buildHabbitCategory(String locationSetting) {
-            return CONTENT_URI.buildUpon().appendPath(locationSetting).build();
-        }
-
-        public static Uri buildHabbitCategoryWithStartDate(
-                String locationSetting, long startDate) {
-            long normalizedDate = normalizeDate(startDate);
-            return CONTENT_URI.buildUpon().appendPath(locationSetting)
-                    .appendQueryParameter(COLUMN_DATE, Long.toString(normalizedDate)).build();
-        }
-
-        public static Uri buildHabbitCategoryWithDate(String locationSetting, long date) {
-            return CONTENT_URI.buildUpon().appendPath(locationSetting)
-                    .appendPath(Long.toString(normalizeDate(date))).build();
-        }
-
-        public static String getCategorySettingFromUri(Uri uri) {
-            return uri.getPathSegments().get(1);
-        }
-
-        public static long getDateFromUri(Uri uri) {
-            return Long.parseLong(uri.getPathSegments().get(2));
-        }
-
-        public static long getStartDateFromUri(Uri uri) {
-            String dateString = uri.getQueryParameter(COLUMN_DATE);
-            if (null != dateString && dateString.length() > 0)
-                return Long.parseLong(dateString);
-            else
-                return 0;
-        }
     }
     /* Inner class that defines the table contents of the habbit category table
     * each habbit goes to special category - "Mind", "Body", SelfImprovement"..etc */
