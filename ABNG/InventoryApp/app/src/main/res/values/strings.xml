@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Inventory App</string>
+
+    <string name="item1_name">Big Construction Site</string>
+    <string name="item1_desc">Bulldoze the construction site, bring supplies in the tipper truck, then hoist them in the crane with rotating cabin, posable arm and claw to construct your own building!</string>
+    <string name="item1_price">49.99</string>
+
+    <string name="details_activity">Item Details</string>
+    <string name="ad_new_product">Add new product</string>
+    <string name="hint_new_prod">Type the Product Name</string>
+    <string name="no_items_text">You have no items in your Inventory. In order to Add Item please select (+) button in menu.</string>
+
+</resources>
