@@ -1,5 +1,5 @@
 # ABNG
-Udacity ABNG course projects:
+These android apps were created learning course Android Basics Nanodegree by Google
 
 Project 1. Single Screen App
 Project 2. Court Counter App
